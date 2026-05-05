@@ -57,20 +57,50 @@
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-import random
+# import random
 
-i=0
-num=random.randint(1, 100)
-while i<5:
-    num1=int(input("pon un numero "))
-    if num1>num:
-        print("te pasaste")
-        i+=1
-    elif num1<num:
-        print("esta mas adelante ")
-        i+=1
-    elif num1==num:
-        print("acertaste")
-        i=5 #break = hace lo mismo que si terminara el algoritmo
-print(f"este es el numero {num}")
+# i=0
+# num=random.randint(1, 100)
+# while i<5:
+#     num1=int(input("pon un numero "))
+#     if num1>num:
+#         print("te pasaste")
+#         i+=1
+#     elif num1<num:
+#         print("esta mas adelante ")
+#         i+=1
+#     elif num1==num:
+#         print("acertaste")
+#         i=5 #break = hace lo mismo que si terminara el algoritmo
+# print(f"este es el numero {num}")
     
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# import random 
+# import time
+# con=0
+# ale1=random.randint(1,9)
+# ale2=random.randint(1,9)
+# ale3=random.randint(1,9)
+# t1=False
+# t2=False
+# t3=False
+# print(f"los numeros son -{ale1}-{ale2}-{ale3}- ")
+# while not t1 or not t2 or not t3:
+#     aletorio=random.randint(1,9)
+#     print(f"numero generado !{aletorio}! ")
+#     time.sleep(0.5)
+#     if ale1==aletorio:
+#         t1=True
+#         con+=1
+#     if ale2==aletorio:
+#         t2=True
+#         con+=1
+#     if ale3==aletorio:
+#         t3=True
+#         con+=1
+# print("haz ganado este fue tu numero de intentos" ,con )
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
