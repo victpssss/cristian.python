@@ -78,11 +78,67 @@
     
 
 
-alumno={
-    "nombre:": "masca pitos ",
-    "carrera:": "informaica",
-    "edad:": 18
+# alumno={
+#     "nombre:": "masca pitos ",
+#     "carrera:": "informaica",
+#     "edad:": 18
+# }
+# print(alumno)
+# for key, value in alumno.items():
+#     print(key, value)
+op=0
+
+vegetales={
+    1:"maracuya",
+    2:"pera",
+    3:"cebolla",
 }
-print(alumno)
-for key, value in alumno.items():
-    print(key, value)
+
+def agregarVegetal():
+    nombrev=input("ingrese el nombre de la vegetal: ")
+    vegetales[list(vegetales.items())[-1][0]+1]=(nombrev)
+    
+
+def mostrarVegetal():
+    for key, value in vegetales.items():
+        print(key,".-",value )
+    print("-"*30)
+
+ 
+def eliminarVegetal():
+    bolal=int(input("ingrese el numero el que quiera eliminiar: "))
+    del vegetales[bolal]
+    
+
+def actualizarVegeteal():
+    print("")
+
+
+def vegetalesMenu():
+    while True:
+        try:
+            print("====FERIA====")
+            print("1. agregar vegetal ")
+            print("2. eliminar vegetal ")
+            print("3. acualizar vegetal ")
+            print("4. mostrar vegetal ")
+            print("5. --salir--")
+            op=int(input("seleccione una opcion "))
+            match op:
+                case 1:
+                    agregarVegetal()
+                case 2:
+                    eliminarVegetal()
+                case 3:
+                    actualizarVegeteal()
+                case 4:
+                    mostrarVegetal()
+                case 5:
+                    print("saliendo")
+                    break
+        except:
+            print("error intente denuevo ")
+
+
+
+vegetalesMenu()
